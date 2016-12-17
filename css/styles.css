@@ -64,7 +64,7 @@ table {
 
 html, body {
   height: 100vh;
-  background: #6c6364;
+  background: #ccc;
 }
 
 .container {
@@ -95,8 +95,8 @@ html, body {
 }
 
 .fish {
-  background-image: url("../img/peixe.JPG");
-  background-size: auto 100%;
+  background-image: url("../img/peixe1.png");
+  background-size: auto 100% ;
   background-position: center;
   background-repeat: no-repeat;
 }
