@@ -67,6 +67,15 @@ html, body {
   background: #ccc;
 }
 
+section {
+	display: none;
+	height: 100%;
+}
+
+.active {
+	display: block;
+}
+
 .container {
   margin: 0 auto;
   height: 100vh;
