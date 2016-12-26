@@ -64,12 +64,13 @@ table {
 
 html, body {
   height: 100vh;
-  background: #ccc;
+  background: #ddd;
 }
 
 section {
 	display: none;
 	height: 100%;
+	margin: auto;
 }
 
 .active {
@@ -95,12 +96,38 @@ section {
   height: 20%;
 }
 
+.ten-row:before,
+.ten-row:after {
+  content: " ";
+  display: table;
+}
+
+.ten-row:after {
+  clear: both;
+}
+
+.ten-row {
+  height: 10%;
+}
+
 .column {
   position: relative;
   float: left;
   border-radius: 0px;
   height: 100%;
   text-align: center;
+}
+
+.bird {
+  background-image: url("../img/passaro.png");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fish-wrapper {
+	height: 100%;
+	transform: rotate(45deg);
 }
 
 .fish {
@@ -110,10 +137,48 @@ section {
   background-repeat: no-repeat;
 }
 
+.fish-h-2x {
+	background-image: url("../img/peixe1.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+	-webkit-transform: rotate(90deg) scale(2);
+  -moz-transform: rotate(90deg) scale(2)
+  -ms-transform: rotate(90deg) scale(2);
+  -o-transform: rotate(90deg) scale(2);
+  transform: rotate(90deg) scale(2);
+}
+
+.fish-h {
+	background-image: url("../img/peixe1.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+	-webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.fish-hb {
+	background-image: url("../img/peixe1.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+	-webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+/*
 .fish:hover {
-  animation: water 2s cubic-bezier(.08,.37,.1,.92);
+	animation: water 2s cubic-bezier(.08,.37,.1,.92);
   animation-iteration-count: infinite;
 }
+*/
 
 @keyframes water {
     0% {
@@ -125,7 +190,6 @@ section {
     100%{
       transform: translate(0, 0);
     }
-
 }
 
 .column-1 {
@@ -173,19 +237,346 @@ section {
 }
 
 .title {
-  font-family: 'Indie Flower', cursive;
-  font-size: 50px;
+  font-family: 'Amatic SC', 'Indie Flower', cursive;
+  font-size: 300%;
   padding-top: 10%;
   display: block;
 }
 
 .title-sub {
-  font-size: 25px;
+  font-size: 200%;
 }
 
 .author {
-  font-family: 'Indie Flower', cursive;
-  font-size: 15px;
-  padding-top: 20%;
+  font-family: 'Amatic SC', 'Indie Flower', cursive;
+  font-size: 100%;
+  padding-top: 10%;
   display: block;
+}
+
+.spiral-container {
+	position: relative;
+	height: 100vh;
+}
+
+.spiral-container div {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 9.0909090909%; height: 20%;
+}
+
+.round-deg15 {
+	transform: rotate(15deg) translate(-430%, -105%);
+}
+
+.round-deg30 {
+	transform: rotate(30deg) translate(-305%, 50%);
+}
+
+.round-deg35 {
+	transform: rotate(35deg) translate(-500%, 125%);
+}
+
+.round-deg45 {
+	transform: rotate(45deg) translate(-350%, 80%);
+}
+
+.round-deg55 {
+	transform: rotate(55deg) translate(-505%, 140%);
+}
+
+.round-deg75 {
+	transform: rotate(75deg) translate(-330%, 90%);
+}
+
+.round-deg115 {
+	transform: rotate(115deg) translate(-290%, 70%);
+}
+
+.round-deg125 {
+	transform: rotate(125deg) translate(-410%, 15%);
+}
+
+.round-deg130 {
+	transform: rotate(130deg) translate(-235%, 15%);
+}
+
+.round-deg150 {
+	transform: rotate(150deg) translate(-335%, 70%);
+}
+
+.round-deg155 {
+	transform: rotate(155deg) translate(-440%, 15%);
+}
+
+.round-deg185 {
+	transform: rotate(185deg) translate(-230%, 45%);
+}
+
+.round-deg190 {
+	transform: rotate(190deg) translate(-305%, 70%);
+}
+
+.round-deg210 {
+	transform: rotate(210deg) translate(-380%, 100%);
+}
+
+.round-deg235 {
+	transform: rotate(235deg) translate(-340%, 90%);
+}
+
+.round-deg240 {
+	transform: rotate(240deg) translate(-225%, 100%);
+}
+
+.round-deg255 {
+	transform: rotate(255deg) translate(-245%, 30%);
+}
+
+.round-deg265 {
+	transform: rotate(265deg) translate(-130%, 30%);
+}
+
+.round-deg285 {
+	transform: rotate(285deg) translate(-270%, -95%);
+}
+
+.round-deg290 {
+	transform: rotate(290deg) translate(-200%, -50%);
+}
+
+.round-deg320 {
+	transform: rotate(320deg) translate(-450%, -80%);
+}
+
+.round-deg325 {
+	transform: rotate(325deg) translate(-350%, -90%);
+}
+
+.round-deg330 {
+	transform: rotate(330deg) translate(-260%, -80%);
+}
+
+.round-deg340 {
+	transform: rotate(340deg) translate(-545%, -95%);
+}
+
+.round-deg345 {
+	transform: rotate(345deg) translate(-400%, -115%);
+}
+
+.out-deg15 {
+	transform: rotate(15deg) translate(90%, -300%);
+}
+
+.out-deg20 {
+	transform: rotate(20deg) translate(30%, -170%);
+}
+
+.out-deg35 {
+	transform: rotate(35deg) translate(70%, -345%);
+}
+
+.out-deg45 {
+	transform: rotate(45deg) translate(65%, -250%);
+}
+
+.out-deg55 {
+	transform: rotate(55deg) translate(0%, -130%);
+}
+
+.out-deg65 {
+	transform: rotate(65deg) translate(50%, -340%);
+}
+
+.out-deg105 {
+	transform: rotate(105deg) translate(-115%, -200%);
+}
+
+.out-deg107 {
+	transform: rotate(107deg) translate(-40%, -100%);
+}
+
+.out-deg110 {
+	transform: rotate(110deg) translate(-85%, -290%);
+}
+
+.out-deg115 {
+	transform: rotate(115deg) translate(-45%, -320%);
+}
+
+.out-deg125 {
+	transform: rotate(125deg) translate(-55%, -160%);
+}
+
+.out-deg130 {
+	transform: rotate(130deg) translate(-10%, -250%);
+}
+
+.out-deg165 {
+	transform: rotate(165deg) translate(-20%, -70%);
+}
+
+.out-deg170 {
+	transform: rotate(170deg) translate(30%, -150%);
+}
+
+.out-deg200 {
+	transform: rotate(200deg) translate(70%, -120%);
+}
+
+.out-deg225 {
+	transform: rotate(225deg) translate(65%, -240%);
+}
+
+.out-deg230 {
+	transform: rotate(230deg) translate(85%, -150%);
+}
+
+.out-deg235 {
+	transform: rotate(235deg) translate(140%, -380%);
+}
+
+.out-deg250 {
+	transform: rotate(250deg) translate(50%, -250%);
+}
+
+.out-deg260 {
+	transform: rotate(260deg) translate(60%, -380%);
+}
+
+.out-deg265 {
+	transform: rotate(265deg) translate(35%, -180%);
+}
+
+.out-deg270 {
+	transform: rotate(270deg) translate(50%, -270%);
+}
+
+.out-deg285 {
+	transform: rotate(285deg) translate(30%, -410%);
+}
+
+.out-deg290 {
+	transform: rotate(290deg) translate(0%, -190%);
+}
+
+.out-deg293 {
+	transform: rotate(293deg) translate(40%, -290%);
+}
+
+.out-deg300 {
+	transform: rotate(300deg) translate(30%, -450%);
+}
+
+.out-deg315 {
+	transform: rotate(315deg) translate(5%, -305%);
+}
+
+.out-deg330 {
+	transform: rotate(330deg) translate(-25%, -165%);
+}
+
+.out-deg340 {
+	transform: rotate(340deg) translate(-40%, -300%);
+}
+
+.out-deg350 {
+	transform: rotate(350deg) translate(-10%, -140%);
+}
+
+.out-deg355 {
+	transform: rotate(355deg) translate(40%, -210%);
+}
+
+.in-deg20 {
+	transform: rotate(20deg) translate(-30%, 150%);
+}
+
+.in-deg25 {
+	transform: rotate(25deg) translate(-100%, 90%);
+}
+
+.in-deg30 {
+	transform: rotate(30deg) translate(-200%, 210%);
+}
+
+.in-deg45 {
+	transform: rotate(45deg) translate(-250%, 400%);
+}
+
+.in-deg60 {
+	transform: rotate(60deg) translate(-160%, 200%);
+}
+
+.in-deg85 {
+	transform: rotate(85deg) translate(-65%, 400%);
+}
+
+.in-deg110 {
+	transform: rotate(110deg) translate(-20%, 250%);
+}
+
+.in-deg105 {
+	transform: rotate(105deg) translate(-65%, 400%);
+}
+
+.in-deg120 {
+	transform: rotate(120deg) translate(-65%, 340%);
+}
+
+.in-deg130 {
+	transform: rotate(130deg) translate(-50%, 170%);
+}
+
+.in-deg175 {
+	transform: rotate(175deg) translate(190%, 260%);
+}
+
+.in-deg180 {
+	transform: rotate(180deg) translate(80%, 220%);
+}
+
+.in-deg190 {
+	transform: rotate(190deg) translate(-80%, 155%);
+}
+
+.in-deg195 {
+	transform: rotate(195deg) translate(15%, 270%);
+}
+
+.in-deg225 {
+	transform: rotate(225deg) translate(-40%, 350%);
+}
+
+.in-deg240 {
+	transform: rotate(240deg) translate(-40%, 250%);
+}
+
+.in-deg255 {
+	transform: rotate(255deg) translate(40%, 110%);
+}
+
+.in-deg270 {
+	transform: rotate(270deg) translate(60%, 350%);
+}
+
+.in-deg275 {
+	transform: rotate(275deg) translate(35%, 180%);
+}
+
+.in-deg280 {
+	transform: rotate(280deg) translate(-30%, 250%);
+}
+
+.in-deg300 {
+	transform: rotate(300deg) translate(20%, 110%);
+}
+
+.in-deg315 {
+	transform: rotate(315deg) translate(25%, 225%);
+}
+
+.in-deg345 {
+	transform: rotate(345deg) translate(25%, 150%);
 }
