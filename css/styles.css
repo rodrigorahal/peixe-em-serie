@@ -73,6 +73,13 @@ section {
 	margin: auto;
 }
 
+svg path {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .active {
 	display: block;
 }
@@ -237,7 +244,7 @@ section {
 }
 
 .title {
-  font-family: 'Amatic SC', 'Indie Flower', cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 300%;
   padding-top: 10%;
   display: block;
@@ -248,8 +255,8 @@ section {
 }
 
 .author {
-  font-family: 'Amatic SC', 'Indie Flower', cursive;
-  font-size: 100%;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 80%;
   padding-top: 10%;
   display: block;
 }
