@@ -64,13 +64,15 @@ table {
 
 body {
   height: 100vh;
-  background: #ddd;
 }
 
 section {
+
 	display: none;
 	height: 100%;
+	height: 100vh;
 	margin: auto;
+	background: #ddd;
 }
 
 svg path {

@@ -6,6 +6,9 @@
     <title>Peixe Em Série</title>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Shadows+Into+Light" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
@@ -592,6 +595,7 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
+
         $(document).keydown(function(e) {
           switch(e.which) {
               case 37: // left
@@ -611,6 +615,15 @@
           }
           e.preventDefault(); // prevent the default action (scroll / move caret)
         });
+
+        $(document).on("swipeleft", function(event) {
+          pageFoward();
+          event.preventDefault();
+
+        });
+
+        $(document).on("swiperight", pageBackward);
+
       });
     </script>
   </body>
