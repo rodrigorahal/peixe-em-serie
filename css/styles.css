@@ -73,6 +73,7 @@ section {
 	height: 100vh;
 	margin: auto;
 	background: #ddd;
+	overflow: hidden;
 }
 
 svg path {
