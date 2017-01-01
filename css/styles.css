@@ -148,6 +148,34 @@ svg path {
   background-repeat: no-repeat;
 }
 
+.fish-2 {
+	background-image: url("../img/peixe2.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fish-3 {
+	background-image: url("../img/peixe3.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fish-4 {
+	background-image: url("../img/peixe4.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fish-5 {
+	background-image: url("../img/peixe5.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .fish-h-2x {
 	background-image: url("../img/peixe1.png");
   background-size: auto 100% ;
@@ -262,6 +290,16 @@ svg path {
   font-family: 'Architects Daughter', cursive;
   font-size: 1.8vh;
   height: 20%;
+}
+
+.description {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 3vh;
+	height: 40%;
+}
+
+.portifolio-link a:link, a:visited {
+	color: #000;
 }
 
 .spiral-container {
