@@ -298,9 +298,8 @@ svg path {
 	height: 40%;
 }
 
-.portifolio-link a:link, a:visited {
+a {
 	color: #000;
-	-webkit-appearance: none;
 }
 
 .spiral-container {
