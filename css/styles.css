@@ -129,7 +129,7 @@ svg path {
 }
 
 .bird {
-  background-image: url("../img/passaro.png");
+  background-image: url("../img/passaro-min.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -142,42 +142,42 @@ svg path {
 }
 
 .fish {
-  background-image: url("../img/peixe1.png");
+  background-image: url("../img/peixe1-min.png");
   background-size: auto 100% ;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .fish-2 {
-	background-image: url("../img/peixe2.png");
+	background-image: url("../img/peixe2-min.png");
   background-size: auto 100% ;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .fish-3 {
-	background-image: url("../img/peixe3.png");
+	background-image: url("../img/peixe3-min.png");
   background-size: auto 100% ;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .fish-4 {
-	background-image: url("../img/peixe4.png");
+	background-image: url("../img/peixe4-min.png");
   background-size: auto 100% ;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .fish-5 {
-	background-image: url("../img/peixe5.png");
+	background-image: url("../img/peixe5-min.png");
   background-size: auto 100% ;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .fish-h-2x {
-	background-image: url("../img/peixe1.png");
+	background-image: url("../img/peixe1-min.png");
   background-size: auto 100% ;
   background-position: center;
   background-repeat: no-repeat;
@@ -189,7 +189,7 @@ svg path {
 }
 
 .fish-h {
-	background-image: url("../img/peixe1.png");
+	background-image: url("../img/peixe1-min.png");
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,7 +201,7 @@ svg path {
 }
 
 .fish-hb {
-	background-image: url("../img/peixe1.png");
+	background-image: url("../img/peixe1-min.png");
   background-size: auto 100% ;
   background-position: center;
   background-repeat: no-repeat;
