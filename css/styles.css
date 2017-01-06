@@ -231,6 +231,19 @@ svg path {
     }
 }
 
+.up-and-down {
+	animation: upAndDown 1.5s alternate ease-in-out infinite;
+}
+
+@keyframes upAndDown {
+	from {
+		transform: rotate(90deg);
+	}
+	to {
+		transform: rotate(90deg) translateX(-40%);
+	}
+}
+
 .column-1 {
   width: 9.0909090909%;
 }
