@@ -136,9 +136,12 @@ svg path {
 	background-clip: border-box;
 }
 
+.bird-wrapper {
+	height: 100%;
+}
+
 .fish-wrapper {
 	height: 100%;
-	transform: rotate(45deg);
 }
 
 .fish {
@@ -241,6 +244,58 @@ svg path {
 	}
 	to {
 		transform: rotate(90deg) translateX(-40%);
+	}
+}
+
+.escape {
+	animation: rotate30degRange 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate30degRange {
+	0% {
+		transform: rotate(-15deg);
+	}
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	60% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+
+.bird-left-and-right {
+	animation: birdLeftAndRight 5s alternate ease-in-out infinite;
+}
+
+@keyframes birdLeftAndRight {
+	to {
+		transform: translateX(-40%) translateY(0%);
+	}
+
+}
+
+.bird-up-and-down {
+	animation: birdUpAndDown 1.5s alternate ease-in-out infinite;
+}
+
+@keyframes birdUpAndDown {
+	to {
+		transform: translateY(-50%);
 	}
 }
 
@@ -459,50 +514,158 @@ a {
 
 .round-deg155 {
 	transform: rotate(155deg) translate(-440%, 15%);
+	animation: round-deg155 4s linear infinite;
+}
+
+@keyframes round-deg155 {
+	0% { transform: rotate(155deg) translate(-440%, 15%); }
+	25% { transform: rotate(245deg) translate(-300%, 65%); }
+	50% { transform: rotate(335deg) translate(-480%, -65%); }
+	75% { transform: rotate(425deg) translate(-380%, 65%); }
+	100% { transform: rotate(515deg) translate(-440%, 15%); }
 }
 
 .round-deg185 {
 	transform: rotate(185deg) translate(-230%, 45%);
+	animation: round-deg185 4s linear infinite;
+}
+
+@keyframes round-deg185 {
+	0% { transform: rotate(185deg) translate(-230%, 45%); }
+	25% { transform: rotate(275deg) translate(-130%, 5%); }
+	50% { transform: rotate(365deg) translate(-285%, -45%); }
+	75% { transform: rotate(455deg) translate(-190%, -15%); }
+	100% { transform: rotate(545deg) translate(-230%, 45%); }
 }
 
 .round-deg190 {
 	transform: rotate(190deg) translate(-305%, 70%);
+	animation: round-deg190 4s linear infinite;
+}
+
+@keyframes round-deg190 {
+	0% { transform: rotate(190deg) translate(-305%, 70%); }
+	25% { transform: rotate(280deg) translate(-180%, -40%); }
+	50% { transform: rotate(370deg) translate(-410%, -70%); }
+	75% { transform: rotate(460deg) translate(-290, 110%); }
+	100% { transform: rotate(550deg) translate(-305%, 70%); }
 }
 
 .round-deg210 {
 	transform: rotate(210deg) translate(-380%, 100%);
+	animation: round-deg210 4s linear infinite;
+}
+
+@keyframes round-deg210 {
+	0% { transform: rotate(210deg) translate(-380%, 100%); }
+	25% { transform: rotate(300deg) translate(-370%, -100%); }
+	50% { transform: rotate(390deg) translate(-560%, 50%); }
+	75% { transform: rotate(480deg) translate(-355%, 50%); }
+	100% { transform: rotate(570deg) translate(-380%, 100%); }
 }
 
 .round-deg235 {
 	transform: rotate(235deg) translate(-340%, 90%);
+	animation: round-deg235 4s linear infinite;
+}
+
+@keyframes round-deg235 {
+	0% { transform: rotate(235deg) translate(-340%, 90%); }
+	25% { transform: rotate(325deg) translate(-470%, -90%); }
+	50% { transform: rotate(405deg) translate(-540%, 90%); }
+	75% { transform: rotate(505deg) translate(-515%, 75%); }
+	100% { transform: rotate(595deg) translate(-340%, 90%); }
 }
 
 .round-deg240 {
 	transform: rotate(240deg) translate(-225%, 100%);
+	animation: round-deg240 4s linear infinite;
+}
+
+@keyframes round-deg240 {
+	0% { transform: rotate(240deg) translate(-225%, 100%); }
+	25% { transform: rotate(330deg) translate(-365%, -85%); }
+	50% { transform: rotate(410deg) translate(-430%, 115%); }
+	75% { transform: rotate(500deg) translate(-330%, 115%); }
+	100% { transform: rotate(600deg) translate(-225%, 100%); }
 }
 
 .round-deg255 {
 	transform: rotate(255deg) translate(-245%, 30%);
+	animation: round-deg255 4s linear infinite;
+}
+
+@keyframes round-deg255 {
+	0% { transform: rotate(255deg) translate(-245%, 30%); }
+	25% { transform: rotate(345deg) translate(-565%, -115%); }
+	50% { transform: rotate(435deg) translate(-435%, 100%); }
+	75% { transform: rotate(525deg) translate(-465%, 25%); }
+	100% { transform: rotate(615deg) translate(-245%, 30%); }
 }
 
 .round-deg265 {
 	transform: rotate(265deg) translate(-130%, 30%);
+	animation: round-deg265 4s linear infinite;
+}
+
+@keyframes round-deg265 {
+	0% { transform: rotate(265deg) translate(-130%, 30%); }
+	25% { transform: rotate(355deg) translate(-305%, -55%); }
+	50% { transform: rotate(445deg) translate(-250%, 20%); }
+	75% { transform: rotate(535deg) translate(-215%, 65%); }
+	100% { transform: rotate(625deg) translate(-130%, 30%); }
 }
 
 .round-deg285 {
 	transform: rotate(285deg) translate(-270%, -95%);
+	animation: round-deg285 4s linear infinite;
+}
+
+@keyframes round-deg285 {
+	0% { transform: rotate(285deg) translate(-270%, -95%); }
+	25% { transform: rotate(375deg) translate(-450%, -55%); }
+	50% { transform: rotate(465deg) translate(-360%, 65%); }
+	75% { transform: rotate(555deg) translate(-315%, 65%); }
+	100% { transform: rotate(645deg) translate(-270%, -95%); }
 }
 
 .round-deg290 {
 	transform: rotate(290deg) translate(-200%, -50%);
+	animation: round-deg290 4s linear infinite;
+}
+
+@keyframes round-deg290 {
+	0% { transform: rotate(290deg) translate(-200%, -50%); }
+	25% { transform: rotate(380deg) translate(-275%, -100%); }
+	50% { transform: rotate(470deg) translate(-200%, 50%); }
+	75% { transform: rotate(560deg) translate(-200%, 80%); }
+	100% { transform: rotate(650deg) translate(-200%, -50%); }
 }
 
 .round-deg320 {
 	transform: rotate(320deg) translate(-450%, -80%);
+	animation: round-deg320 4s linear infinite;
+}
+
+@keyframes round-deg320 {
+	0% { transform: rotate(320deg) translate(-450%, -80%); }
+	25% { transform: rotate(410deg) translate(-520%, 100%); }
+	50% { transform: rotate(500deg) translate(-420%, 15%); }
+	75% { transform: rotate(590deg) translate(-320%, 105%); }
+	100% { transform: rotate(680deg) translate(-450%, -80%); }
 }
 
 .round-deg325 {
 	transform: rotate(325deg) translate(-350%, -90%);
+	animation: round-deg325 4s linear infinite;
+}
+
+@keyframes round-deg325 {
+	0% { transform: rotate(325deg) translate(-350%, -90%); }
+	25% { transform: rotate(415deg) translate(-450%, 110%); }
+	50% { transform: rotate(505deg) translate(-350%, 110%); }
+	75% { transform: rotate(595deg) translate(-350%, 110%); }
+	100% { transform: rotate(685deg) translate(-350%, -90%); }
 }
 
 .round-deg330 {
