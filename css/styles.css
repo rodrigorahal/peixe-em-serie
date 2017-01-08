@@ -401,12 +401,11 @@ a {
 
 @keyframes round-deg30 {
 	0% { transform: rotate(30deg) translate(-305%, 50%); }
-	25% { transform: rotate(120deg) translate(-230%, 90%); }
+	25% { transform: rotate(120deg) translate(-230%, 20%); }
 	50% { transform: rotate(210deg) translate(-135%, 80%); }
 	75% { transform: rotate(300deg) translate(-165%, -35%); }
 	100% { transform: rotate(390deg) translate(-305%, 50%); }
 }
-
 
 .round-deg35 {
 	transform: rotate(35deg) translate(-500%, 125%);
@@ -428,9 +427,9 @@ a {
 
 @keyframes round-deg45 {
 	0% { transform: rotate(45deg) translate(-350%, 80%); }
-	25% { transform: rotate(135deg) translate(-220%, 35%); }
-	50% { transform: rotate(225deg) translate(-190%, 45%); }
-	75% { transform: rotate(315deg) translate(-200%, -50%); }
+	25% { transform: rotate(135deg) translate(-220%, -35%); }
+	50% { transform: rotate(225deg) translate(-150%, -45%); }
+	75% { transform: rotate(315deg) translate(-200%, -80%); }
 	100% { transform: rotate(405deg) translate(-350%, 80%); }
 }
 
@@ -559,8 +558,8 @@ a {
 @keyframes round-deg210 {
 	0% { transform: rotate(210deg) translate(-380%, 100%); }
 	25% { transform: rotate(300deg) translate(-370%, -100%); }
-	50% { transform: rotate(390deg) translate(-560%, 50%); }
-	75% { transform: rotate(480deg) translate(-355%, 50%); }
+	50% { transform: rotate(390deg) translate(-560%, 150%); }
+	75% { transform: rotate(480deg) translate(-355%, -50%); }
 	100% { transform: rotate(570deg) translate(-380%, 100%); }
 }
 
@@ -597,9 +596,9 @@ a {
 
 @keyframes round-deg255 {
 	0% { transform: rotate(255deg) translate(-245%, 30%); }
-	25% { transform: rotate(345deg) translate(-565%, -115%); }
-	50% { transform: rotate(435deg) translate(-435%, 100%); }
-	75% { transform: rotate(525deg) translate(-465%, 25%); }
+	25% { transform: rotate(345deg) translate(-400%, -115%); }
+	50% { transform: rotate(435deg) translate(-370%, 100%); }
+	75% { transform: rotate(525deg) translate(-365%, 25%); }
 	100% { transform: rotate(615deg) translate(-245%, 30%); }
 }
 
@@ -636,7 +635,7 @@ a {
 
 @keyframes round-deg290 {
 	0% { transform: rotate(290deg) translate(-200%, -50%); }
-	25% { transform: rotate(380deg) translate(-275%, -100%); }
+	25% { transform: rotate(380deg) translate(-230%, -10%); }
 	50% { transform: rotate(470deg) translate(-200%, 50%); }
 	75% { transform: rotate(560deg) translate(-200%, 80%); }
 	100% { transform: rotate(650deg) translate(-200%, -50%); }
@@ -670,14 +669,41 @@ a {
 
 .round-deg330 {
 	transform: rotate(330deg) translate(-260%, -80%);
+	animation: round-deg330 4s linear infinite;
+}
+
+@keyframes round-deg330 {
+	0% { transform: rotate(330deg) translate(-260%, -80%); }
+	25% { transform: rotate(420deg) translate(-260%, 85%); }
+	50% { transform: rotate(510deg) translate(-240%, 65%); }
+	75% { transform: rotate(600deg) translate(-170%, 100%); }
+	100% { transform: rotate(690deg) translate(-260%, -80%); }
 }
 
 .round-deg340 {
 	transform: rotate(340deg) translate(-545%, -95%);
+	animation: round-deg340 4s linear infinite;
+}
+
+@keyframes round-deg340 {
+	0% { transform: rotate(340deg) translate(-545%, -95%); }
+	25% { transform: rotate(430deg) translate(-500%, 95%); }
+	50% { transform: rotate(520deg) translate(-525%, 15%); }
+	75% { transform: rotate(610deg) translate(-320%, 15%); }
+	100% { transform: rotate(700deg) translate(-545%, -95%); }
 }
 
 .round-deg345 {
 	transform: rotate(345deg) translate(-400%, -115%);
+	animation: round-deg345 4s linear infinite;
+}
+
+@keyframes round-deg345 {
+	0% { transform: rotate(345deg) translate(-400%, -115%); }
+	25% { transform: rotate(435deg) translate(-330%, 115%); }
+	50% { transform: rotate(525deg) translate(-330%, 10%); }
+	75% { transform: rotate(615deg) translate(-245%, 10%); }
+	100% { transform: rotate(705deg) translate(-400%, -115%); }
 }
 
 .out-deg15 {
