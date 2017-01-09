@@ -128,6 +128,79 @@ svg path {
   text-align: center;
 }
 
+.column-1 {
+  width: 9.0909090909%;
+}
+
+.column-2 {
+  width: 18.181818182%;
+}
+
+.column-3 {
+  width: 27.272727273%;
+}
+
+.column-4 {
+  width: 36.363636364%;
+}
+
+.column-5 {
+  width: 45.454545455%;
+}
+
+.column-6 {
+  width: 54.545454545%;
+}
+
+.column-7 {
+  width: 63.636363636%;
+}
+
+.column-8 {
+  width: 72.727272727%;
+}
+
+.column-9 {
+  width: 81.8181818%;
+}
+
+.column-10 {
+  width: 90.909090909%;
+}
+
+.column-11 {
+  width: 100%;
+}
+
+/*
+  ========================================
+  Text
+  ========================================
+*/
+
+.title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 8vh;
+  height: 40%;
+}
+
+.title-sub {
+  font-size: 6vh;
+	height: 40%;
+}
+
+.author {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.8vh;
+  height: 20%;
+}
+
+/*
+  ========================================
+  Background imgs and wrappers
+  ========================================
+*/
+
 .bird {
   background-image: url("../img/passaro-min.png");
   background-size: contain;
@@ -179,42 +252,6 @@ svg path {
   background-repeat: no-repeat;
 }
 
-.fish-h-2x {
-	background-image: url("../img/peixe1-min.png");
-  background-size: auto 100% ;
-  background-position: center;
-  background-repeat: no-repeat;
-	-webkit-transform: rotate(90deg) scale(2);
-  -moz-transform: rotate(90deg) scale(2)
-  -ms-transform: rotate(90deg) scale(2);
-  -o-transform: rotate(90deg) scale(2);
-  transform: rotate(90deg) scale(2);
-}
-
-.fish-h {
-	background-image: url("../img/peixe1-min.png");
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-	-webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.fish-hb {
-	background-image: url("../img/peixe1-min.png");
-  background-size: auto 100% ;
-  background-position: center;
-  background-repeat: no-repeat;
-	-webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
 /*
 .fish:hover {
 	animation: water 2s cubic-bezier(.08,.37,.1,.92);
@@ -234,11 +271,17 @@ svg path {
     }
 }
 
-.up-and-down {
-	animation: upAndDown 1.5s alternate ease-in-out infinite;
+/*
+  ========================================
+  Page1 animations
+  ========================================
+*/
+
+.go-up {
+	animation: fishUp 1.5s alternate ease-in-out infinite;
 }
 
-@keyframes upAndDown {
+@keyframes fishUp {
 	from {
 		transform: rotate(90deg);
 	}
@@ -246,6 +289,40 @@ svg path {
 		transform: rotate(90deg) translateX(-40%);
 	}
 }
+
+
+/*
+  ========================================
+  Bird animations
+  ========================================
+*/
+
+.bird-left-and-right {
+	animation: birdLeftAndRight 5s alternate ease-in-out infinite;
+}
+
+@keyframes birdLeftAndRight {
+	to {
+		transform: translateX(-40%) translateY(0%);
+	}
+
+}
+
+.bird-up-and-down {
+	animation: birdUpAndDown 1.5s alternate ease-in-out infinite;
+}
+
+@keyframes birdUpAndDown {
+	to {
+		transform: translateY(-50%);
+	}
+}
+
+/*
+  ========================================
+  Page9 animations
+  ========================================
+*/
 
 .escape {
 	animation: rotate30degRange 1.5s ease-in-out infinite;
@@ -278,87 +355,12 @@ svg path {
 	}
 }
 
-.bird-left-and-right {
-	animation: birdLeftAndRight 5s alternate ease-in-out infinite;
-}
+/*
+  ========================================
+  Round pages
+  ========================================
+*/
 
-@keyframes birdLeftAndRight {
-	to {
-		transform: translateX(-40%) translateY(0%);
-	}
-
-}
-
-.bird-up-and-down {
-	animation: birdUpAndDown 1.5s alternate ease-in-out infinite;
-}
-
-@keyframes birdUpAndDown {
-	to {
-		transform: translateY(-50%);
-	}
-}
-
-.column-1 {
-  width: 9.0909090909%;
-}
-
-.column-2 {
-  width: 18.181818182%;
-}
-
-.column-3 {
-  width: 27.272727273%;
-}
-
-.column-4 {
-  width: 36.363636364%;
-}
-
-.column-5 {
-  width: 45.454545455%;
-}
-
-.column-6 {
-  width: 54.545454545%;
-}
-
-.column-7 {
-  width: 63.636363636%;
-}
-
-.column-8 {
-  width: 72.727272727%;
-}
-
-.column-9 {
-  width: 81.8181818%;
-}
-
-.column-10 {
-  width: 90.909090909%;
-}
-
-.column-11 {
-  width: 100%;
-}
-
-.title {
-  font-family: 'Amatic SC', cursive;
-  font-size: 8vh;
-  height: 40%;
-}
-
-.title-sub {
-  font-size: 6vh;
-	height: 40%;
-}
-
-.author {
-  font-family: 'Architects Daughter', cursive;
-  font-size: 1.8vh;
-  height: 20%;
-}
 
 .description {
 	font-family: 'Architects Daughter', cursive;
@@ -921,6 +923,12 @@ a {
 .in-deg345 {
 	transform: rotate(345deg) translate(25%, 150%);
 }
+
+/*
+  ========================================
+  Media queries
+  ========================================
+*/
 
 @media screen and (orientation: portrait) {
   .container, .spiral-container {
