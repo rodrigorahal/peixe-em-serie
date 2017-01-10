@@ -273,6 +273,73 @@ svg path {
 
 /*
   ========================================
+  Cover animations
+  ========================================
+*/
+
+.wave-one {
+	animation: fishRight 3s alternate ease-out infinite;
+}
+
+.wave-two {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 0.3s;
+}
+
+.wave-three {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 0.6s;
+}
+
+.wave-four {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 0.9s;
+}
+
+.wave-five {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 1.2s;
+}
+
+.wave-six {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 1.5s;
+}
+
+.wave-seven {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 1.8s;
+}
+
+.wave-eight {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 2.1s;
+}
+
+.wave-nine {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 2.4s;
+}
+
+.wave-ten {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 2.7s;
+}
+
+.wave-eleven {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 3s;
+}
+
+@keyframes fishRight {
+	to {
+		transform: translateX(20%);
+	}
+}
+
+
+/*
+  ========================================
   Page1 animations
   ========================================
 */
