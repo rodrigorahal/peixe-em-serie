@@ -349,12 +349,29 @@ svg path {
 }
 
 @keyframes fishUp {
-	from {
+	to {
+		transform: translateY(-40%);
+	}
+}
+
+.head-up-and-down {
+	animation: fishHeadUpAndDown 3s ease-in-out infinite;
+}
+
+@keyframes fishHeadUpAndDown {
+	0% {
 		transform: rotate(90deg);
 	}
-	to {
-		transform: rotate(90deg) translateX(-40%);
+	33% {
+		transform: rotate(80deg);
 	}
+	66% {
+		transform: rotate(100deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+
 }
 
 
