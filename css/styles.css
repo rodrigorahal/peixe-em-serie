@@ -679,6 +679,32 @@ svg path {
 
 /*
   ========================================
+  Page8 animations
+  ========================================
+*/
+
+.scared {
+	animation: down20pc 1s steps(2) alternate infinite;
+}
+
+@keyframes down20pc {
+	to {
+		transform: translate(20%);
+	}
+}
+
+.scared-foward {
+	animation: foward20pc 1s steps(2) alternate infinite;
+}
+
+@keyframes foward20pc {
+	to {
+		transform: translate(0%, -40%);
+	}
+}
+
+/*
+  ========================================
   Page9 animations
   ========================================
 */
@@ -736,7 +762,7 @@ a {
 	height: 100vh;
 }
 
-.spiral-container div {
+.spiral-container > div {
     position: absolute;
     top: 50%; left: 50%;
     width: 9.0909090909%; height: 20%;
@@ -1067,6 +1093,22 @@ a {
 	100% { transform: rotate(705deg) translate(-400%, -115%); }
 }
 
+/*
+  ========================================
+  Page5 animations
+  ========================================
+*/
+
+.in-and-out {
+	animation: moveInAndOut 2s cubic-bezier(0.4, 0, 0.2, 1) alternate infinite;
+}
+
+@keyframes moveInAndOut {
+	to {
+		transform: translate(0%, 30%);
+	}
+}
+
 .out-deg15 {
 	transform: rotate(15deg) translate(90%, -300%);
 }
@@ -1191,6 +1233,23 @@ a {
 	transform: rotate(355deg) translate(40%, -210%);
 }
 
+
+/*
+  ========================================
+  Page6 animations
+  ========================================
+*/
+
+.go-surface {
+	animation: scale2times 2s alternate ease-in-out infinite;
+}
+
+@keyframes scale2times {
+	to {
+		transform: scale(1.3) translate(0%, -20%);
+	}
+}
+
 .in-deg20 {
 	transform: rotate(20deg) translate(-30%, 150%);
 }
@@ -1239,12 +1298,12 @@ a {
 	transform: rotate(180deg) translate(80%, 220%);
 }
 
-.in-deg190 {
-	transform: rotate(190deg) translate(-80%, 155%);
-}
-
 .in-deg195 {
 	transform: rotate(195deg) translate(15%, 270%);
+}
+
+.in-deg220 {
+	transform: rotate(220deg) translate(45%, 170%);
 }
 
 .in-deg225 {
