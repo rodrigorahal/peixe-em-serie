@@ -72,7 +72,7 @@ section {
 	height: 100vh;
 	margin: auto;
 	background: #ddd;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 svg path {
@@ -495,8 +495,6 @@ svg path {
 	}
 }
 
-
-
 .keep-cool {
 	animation: moveUpAndDown75deg 2s alternate ease-in-out infinite;
 }
@@ -576,6 +574,78 @@ svg path {
 @keyframes moveHeadDown20deg {
 	to {
 		transform: rotate(20deg);
+	}
+}
+
+/*
+  ========================================
+  Page4 animations
+  ========================================
+*/
+.stunt {
+	transform: translate(-100%, -100%);
+}
+
+.stunt-backwards {
+	transform: translate(100%, -200%);
+}
+
+.move-fish-row{
+	animation: rowAcrossScreen 4s linear infinite;
+}
+
+@keyframes rowAcrossScreen {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+.move-fish-row-backwards {
+	animation: acrossScreenBackwards 4s linear infinite;
+}
+
+@keyframes acrossScreenBackwards {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translate(-100%);
+	}
+}
+
+.move-stunt-pack-backwards {
+	animation: moveDoublePackBackwards 4s linear infinite;
+}
+
+@keyframes moveDoublePackBackwards {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translate(-100%);
+	}
+}
+
+.cruising {
+	animation: rowUp 2s alternate ease-in-out infinite;
+}
+
+@keyframes rowUp {
+	to {
+		transform: translateX(-40%);
+	}
+}
+
+.cruising-down {
+	animation: rowDown 2s alternate ease-in-out infinite;
+}
+
+@keyframes rowDown {
+	to {
+		transform: translateX(40%);
 	}
 }
 
@@ -1225,7 +1295,7 @@ a {
     transform-origin: left top;
     width: 100vh;
 		height: 100vw;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     position: absolute;
     top: 100%;
     left: 0;
@@ -1255,5 +1325,13 @@ a {
 		to {
 			transform: rotate(-90deg) translate(0%, 0%);
 		}
+	}
+
+	.stunt {
+		transform: rotate(-90deg) translate(-100%, 0%);
+	}
+
+	.stunt-backwards {
+		transform: rotate(-90deg) translate(100%, 0%);;
 	}
 }
