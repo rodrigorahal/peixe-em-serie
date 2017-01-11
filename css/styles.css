@@ -649,6 +649,25 @@ svg path {
 	}
 }
 
+/*
+  ========================================
+  Page7 animations
+  ========================================
+*/
+
+.swoosh {
+	animation: rotate40degRange 2s alternate ease-in-out infinite;
+}
+
+@keyframes rotate40degRange {
+	from {
+		transform: scale(2);
+	}
+	to {
+		transform: scale(2) rotate(40deg);
+	}
+}
+
 
 /*
   ========================================
