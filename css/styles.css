@@ -683,7 +683,7 @@ svg path {
   ========================================
 */
 
-.scared {
+.scared-down {
 	animation: down20pc 1s steps(2) alternate infinite;
 }
 
@@ -693,13 +693,33 @@ svg path {
 	}
 }
 
-.scared-foward {
-	animation: foward20pc 1s steps(2) alternate infinite;
+.scared-up {
+	animation: up20pc 1s steps(2) alternate infinite;
 }
 
-@keyframes foward20pc {
+@keyframes up20pc {
+	to {
+		transform: translate(-20%);
+	}
+}
+
+.scared-foward {
+	animation: foward40pc 1s steps(2) alternate infinite;
+}
+
+@keyframes foward40pc {
 	to {
 		transform: translate(0%, -40%);
+	}
+}
+
+.scared-backward {
+	animation: backward40pc 1s steps(2) alternate infinite;
+}
+
+@keyframes backward40pc {
+	to {
+		transform: translate(0%, 40%);
 	}
 }
 
