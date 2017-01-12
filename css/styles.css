@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-shadow: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -179,13 +180,25 @@ svg path {
 
 .title {
   font-family: 'Amatic SC', cursive;
-  font-size: 8vh;
+  font-size: 8.5vh;
   height: 40%;
+	padding-top: 10%;
 }
 
 .title-sub {
-  font-size: 6vh;
+  font-size: 5vh;
 	height: 40%;
+}
+
+.type {
+	font-family: 'Amatic SC', cursive;
+  font-size: 8.5vh;
+  height: 40%;
+	word-spacing: 0.1em;
+}
+
+.sub-type {
+	letter-spacing: 0.09em;
 }
 
 .author {
