@@ -668,8 +668,8 @@ svg path {
   ========================================
 */
 
-.swoosh {
-	animation: rotate40degRange 2s alternate ease-in-out infinite;
+.swoosh-40 {
+	animation: rotate40degRange 1s alternate ease-in-out infinite;
 }
 
 @keyframes rotate40degRange {
@@ -681,6 +681,69 @@ svg path {
 	}
 }
 
+.swoosh-40-backwards {
+	animation: rotate40degRangeBackwards 1s alternate ease-in-out infinite;
+}
+
+@keyframes rotate40degRangeBackwards {
+	from {
+		transform: scale(2);
+	}
+	to {
+		transform: scale(2) rotate(-40deg);
+	}
+}
+
+.swoosh-20 {
+	animation: rotate20degRange 1s alternate ease-in-out infinite;
+}
+
+@keyframes rotate20degRange {
+	from {
+		transform: scale(2);
+	}
+	to {
+		transform: scale(2) rotate(20deg);
+	}
+}
+
+.swoosh-20-backwards {
+	animation: rotate20degRangeBackwards 1s alternate ease-in-out infinite;
+}
+
+@keyframes rotate20degRangeBackwards {
+	from {
+		transform: scale(2);
+	}
+	to {
+		transform: scale(2) rotate(-20deg);
+	}
+}
+
+.go-crazy {
+	animation: fullRotation 0.5s linear infinite;
+}
+
+@keyframes fullRotation {
+	from {
+		transform: scale(2) rotate(0deg);
+	}
+	to {
+		transform: scale(2) rotate(360deg);
+	}
+}
+
+.spin {
+	animation: fullRotation 3s linear infinite;
+}
+
+.fast {
+	animation: fullRotation 2s linear infinite;
+}
+
+.faster {
+	animation: fullRotation 1s linear infinite;
+}
 
 /*
   ========================================
