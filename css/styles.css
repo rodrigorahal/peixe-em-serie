@@ -1340,8 +1340,11 @@ a {
 }
 
 @keyframes moveInAndOut {
-	to {
+	from {
 		transform: translate(0%, 30%);
+	}
+	to {
+		transform: translate(0%, -200%);
 	}
 }
 
