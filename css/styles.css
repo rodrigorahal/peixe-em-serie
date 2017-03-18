@@ -1479,6 +1479,20 @@ a {
   ========================================
 */
 
+.out-and-in {
+	animation: moveOutAndIn 2s cubic-bezier(0.4, 0, 0.2, 1) alternate infinite;
+}
+
+@keyframes moveOutAndIn {
+	from {
+		transform: translate(0%, 200%);
+	}
+	to {
+		transform: translate(0%, -50%);
+
+	}
+}
+
 .go-surface {
 	animation: scale2times 2s alternate ease-in-out infinite;
 }
