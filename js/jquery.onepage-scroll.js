@@ -49,7 +49,9 @@
             startX = touches[0].pageX;
             startY = touches[0].pageY;
             $this.bind('touchmove', touchmove);
+            $this.bind('touchend', touchend);
           }
+          event.preventDefault();
         }
 
         function touchmove(event) {
@@ -72,10 +74,16 @@
             }
             if (Math.abs(deltaX) >= 50 || Math.abs(deltaY) >= 50) {
               $this.unbind('touchmove', touchmove);
+              $this.unbind('touchend', touchend);
             }
           }
+          event.preventDefault();
         }
 
+        function touchend(event) {
+          $this.unbind('touchmove', touchmove);
+          event.preventDefault();
+        }
       });
     };
 
@@ -317,40 +325,50 @@
 
     el.swipeEvents().bind("swipeDown swipeRight",  function(event){
       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      /*
       var timeNow = new Date().getTime();
       if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
           event.preventDefault();
           return;
       }
-      el.moveUp();
       lastAnimation = timeNow;
+      */
+      el.moveUp();
+
     }).bind("swipeUp", function(event){
       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      /*
       var timeNow = new Date().getTime();
       if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
           event.preventDefault();
           return;
       }
       lastAnimation = timeNow;
+      */
       el.moveDown();
     }).bind("swipeLeft", function(event){
       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      /*
       var timeNow = new Date().getTime();
       if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
           event.preventDefault();
           return;
       }
-      el.moveDown();
       lastAnimation = timeNow;
+      */
+      el.moveDown();
     }).bind("swipeRight", function(event){
       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      /*
       var timeNow = new Date().getTime();
       if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
           event.preventDefault();
           return;
       }
-      el.moveUp();
       lastAnimation = timeNow;
+      */
+      el.moveUp();
+
     });
 
     // Create Pagination and Display Them
