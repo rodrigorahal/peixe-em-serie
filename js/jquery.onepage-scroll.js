@@ -315,18 +315,42 @@
       }
     });
 
-    el.swipeEvents().bind("swipeDown",  function(event){
+    el.swipeEvents().bind("swipeDown swipeRight",  function(event){
       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      var timeNow = new Date().getTime();
+      if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
+          event.preventDefault();
+          return;
+      }
       el.moveUp();
+      lastAnimation = timeNow;
     }).bind("swipeUp", function(event){
       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      var timeNow = new Date().getTime();
+      if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
+          event.preventDefault();
+          return;
+      }
+      lastAnimation = timeNow;
       el.moveDown();
     }).bind("swipeLeft", function(event){
       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      var timeNow = new Date().getTime();
+      if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
+          event.preventDefault();
+          return;
+      }
       el.moveDown();
+      lastAnimation = timeNow;
     }).bind("swipeRight", function(event){
       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      var timeNow = new Date().getTime();
+      if(timeNow - lastAnimation < quietPeriod + settings.animationTime) {
+          event.preventDefault();
+          return;
+      }
       el.moveUp();
+      lastAnimation = timeNow;
     });
 
     // Create Pagination and Display Them
