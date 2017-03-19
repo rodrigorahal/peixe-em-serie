@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-shadow: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -63,11 +64,12 @@ table {
 }
 
 body {
+	background: #ddd;
   height: 100vh;
 }
 
 section {
-
+	position: relative;
 	display: none;
 	height: 100%;
 	height: 100vh;
@@ -128,109 +130,6 @@ svg path {
   text-align: center;
 }
 
-.bird {
-  background-image: url("../img/passaro.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-	background-clip: border-box;
-}
-
-.fish-wrapper {
-	height: 100%;
-	transform: rotate(45deg);
-}
-
-.fish {
-  background-image: url("../img/peixe1.png");
-  background-size: auto 100% ;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.fish-2 {
-	background-image: url("../img/peixe2.png");
-  background-size: auto 100% ;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.fish-3 {
-	background-image: url("../img/peixe3.png");
-  background-size: auto 100% ;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.fish-4 {
-	background-image: url("../img/peixe4.png");
-  background-size: auto 100% ;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.fish-5 {
-	background-image: url("../img/peixe5.png");
-  background-size: auto 100% ;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.fish-h-2x {
-	background-image: url("../img/peixe1.png");
-  background-size: auto 100% ;
-  background-position: center;
-  background-repeat: no-repeat;
-	-webkit-transform: rotate(90deg) scale(2);
-  -moz-transform: rotate(90deg) scale(2)
-  -ms-transform: rotate(90deg) scale(2);
-  -o-transform: rotate(90deg) scale(2);
-  transform: rotate(90deg) scale(2);
-}
-
-.fish-h {
-	background-image: url("../img/peixe1.png");
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-	-webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.fish-hb {
-	background-image: url("../img/peixe1.png");
-  background-size: auto 100% ;
-  background-position: center;
-  background-repeat: no-repeat;
-	-webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-/*
-.fish:hover {
-	animation: water 2s cubic-bezier(.08,.37,.1,.92);
-  animation-iteration-count: infinite;
-}
-*/
-
-@keyframes water {
-    0% {
-      transform: translate(0, 0);
-    }
-    50% {
-      transform: translate(8%, 0);
-    }
-    100%{
-      transform: translate(0, 0);
-    }
-}
-
 .column-1 {
   width: 9.0909090909%;
 }
@@ -275,32 +174,823 @@ svg path {
   width: 100%;
 }
 
+/*
+  ========================================
+  Text
+  ========================================
+*/
+
 .title {
   font-family: 'Amatic SC', cursive;
-  font-size: 8vh;
-  height: 40%;
+  font-size: 10.5vh;
+  height: 45%;
+
 }
 
 .title-sub {
   font-size: 6vh;
-	height: 40%;
+	height: 45%;
+	padding-top: 10%;
+}
+
+.type {
+	font-family: 'Amatic SC', cursive;
+  font-size: 8.5vh;
+  height: 40%;
+	word-spacing: 0.4em;
+}
+
+.sub-type {
+	letter-spacing: 0.09em;
 }
 
 .author {
-  font-family: 'Architects Daughter', cursive;
-  font-size: 1.8vh;
-  height: 20%;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 2.8vh;
+  height: 10%;
 }
 
+/*
+  ========================================
+  Background imgs and wrappers
+  ========================================
+*/
+
+.bird {
+  background-image: url("../img/passaro-min.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+	background-clip: border-box;
+}
+
+.bird-wrapper {
+	height: 100%;
+}
+
+.fish-wrapper {
+	height: 100%;
+}
+
+.fish {
+  background-image: url("../img/peixe1-min.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fish-2 {
+	background-image: url("../img/peixe2-min.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fish-3 {
+	background-image: url("../img/peixe3-min.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fish-4 {
+	background-image: url("../img/peixe4-min.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fish-5 {
+	background-image: url("../img/peixe5-min.png");
+  background-size: auto 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*
+.fish:hover {
+	animation: water 2s cubic-bezier(.08,.37,.1,.92);
+  animation-iteration-count: infinite;
+}
+*/
+
+@keyframes water {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(8%, 0);
+    }
+    100%{
+      transform: translate(0, 0);
+    }
+}
+
+/*
+  ========================================
+  Cover animations
+  ========================================
+*/
+
+.wave-one {
+	animation: fishRight 3s alternate ease-out infinite;
+}
+
+.wave-two {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 0.3s;
+}
+
+.wave-three {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 0.6s;
+}
+
+.wave-four {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 0.9s;
+}
+
+.wave-five {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 1.2s;
+}
+
+.wave-six {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 1.5s;
+}
+
+.wave-seven {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 1.8s;
+}
+
+.wave-eight {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 2.1s;
+}
+
+.wave-nine {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 2.4s;
+}
+
+.wave-ten {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 2.7s;
+}
+
+.wave-eleven {
+	animation: fishRight 3s alternate ease-out infinite;
+	animation-delay: 3s;
+}
+
+@keyframes fishRight {
+	to {
+		transform: translateX(20%);
+	}
+}
+
+.start-right {
+	animation: startRight 1s ease-in-out infinite;
+}
+
+.start-left {
+	animation: startLeft 1.1s ease-in-out infinite;
+}
+
+.start-right2 {
+	animation: startRight 1.05s ease-in-out infinite;
+}
+
+.start-right3 {
+	animation: startRight 1.1s ease-in-out infinite;
+}
+
+.start-left2 {
+	animation: startLeft 1.15s ease-in-out infinite;
+}
+
+.start-left3 {
+	animation: startLeft 1.05s ease-in-out infinite;
+}
+
+.right-left {
+	animation: startRight 1s ease-in-out infinite;
+}
+
+.right-left-steps {
+	animation: startRight 1s steps(2) infinite;
+}
+
+@keyframes startRight {
+	0% {
+		transform: translate(-10%);
+	}
+	50% {
+		transform: translate(10%);
+	}
+	100% {
+		transform: translate(-10%);
+	}
+}
+
+@keyframes startLeft {
+	0% {
+		transform: translate(10%);
+	}
+	50% {
+		transform: translate(-10%);
+	}
+	100% {
+		transform: translate(10%);
+	}
+}
+
+.rotate-right {
+	animation: rotatePlus20 1s alternate ease-in-out infinite;
+}
+
+.rotate-left {
+	animation: rotateMinus20 1s alternate ease-in-out infinite;
+}
+
+@keyframes rotatePlus20 {
+	0% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(10deg);
+	}
+}
+
+@keyframes rotateMinus20 {
+	0% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+.up-and-down {
+	animation: upAndDown 1s alternate ease-in-out infinite;
+}
+
+@keyframes upAndDown {
+	0% {
+		transform: translateY(-10%);
+	}
+	50% {
+		transform: translateY(10%);
+	}
+	100% {
+		transform: translateY(-10%);
+	}
+}
+
+.move-to-surface{
+	animation: changeScale 1s alternate ease-in-out infinite;
+}
+
+@keyframes changeScale {
+	0% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(0.8);
+	}
+}
+/*
+  ========================================
+  Page1 animations
+  ========================================
+*/
+
+.go-up {
+	animation: fishUp 1.5s alternate ease-in-out infinite;
+}
+
+@keyframes fishUp {
+	to {
+		transform: translateY(-40%);
+	}
+}
+
+.head-up-and-down {
+	animation: fishHeadUpAndDown 3s ease-in-out infinite;
+}
+
+@keyframes fishHeadUpAndDown {
+	0% {
+		transform: rotate(90deg);
+	}
+	33% {
+		transform: rotate(80deg);
+	}
+	66% {
+		transform: rotate(100deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+
+}
+
+/*
+  ========================================
+  Page2 animations
+  ========================================
+*/
+.move-pack {
+	animation: acrossScreen 4s linear infinite;
+}
+
+@keyframes acrossScreen {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+.move-stunt-pack {
+	animation: moveDoublePack 4s linear infinite;
+}
+
+@keyframes moveDoublePack {
+	from {
+		transform: translate(-100%, -100%);
+	}
+	to {
+		transform: translate(0%, -100%);
+	}
+}
+
+.come-from-bottom-corner {
+	animation: moveUp45deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveUp45deg {
+	from {
+		transform: rotate(45deg) translate(70%, 70%);
+	}
+	to {
+		transform: rotate(45deg) translate(20%, 20%);
+	}
+}
+
+.come-from-bottom {
+	animation: moveUp65deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveUp65deg {
+	from {
+		transform: rotate(65deg) translate(50%, 90%);
+	}
+	to {
+		transform: rotate(65deg) translate(0%, 0%);
+	}
+}
+
+.come-from-top-corner {
+	animation: moveDown85deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveDown85deg {
+	from {
+		transform: rotate(85deg) translate(-70%, -20%);
+	}
+	to {
+		transform: rotate(85deg) translate(0%, -20%);
+	}
+}
+
+.come-from-top {
+	animation: moveDown100deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveDown100deg {
+	from {
+		transform: rotate(100deg) translate(-80%, 100%);
+	}
+	to {
+		transform: rotate(100deg) translate(20%, 0%);
+	}
+}
+
+.come-closer-top {
+	animation: moveCloser100deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveCloser100deg {
+	from {
+		transform: rotate(100deg) translate(20%, 50%);
+	}
+	to {
+		transform: rotate(100deg) translate(40%, 0%)
+	}
+}
+
+.come-closer-bottom {
+	animation: moveCloser90deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveCloser90deg {
+	from {
+		transform: rotate(90deg) translate(30%, 40%);
+	}
+	to {
+		transform: rotate(90deg) translate(-50%, 0%)
+	}
+}
+
+.come-from-behind {
+	animation: moveFoward80deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveFoward80deg {
+	from {
+		transform: rotate(80deg) translate(15%, -10%);
+	}
+	to {
+		transform: rotate(80deg) translate(0, -60%)
+	}
+}
+
+.keep-cool {
+	animation: moveUpAndDown75deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveUpAndDown75deg {
+	from {
+		transform: rotate(75deg) translate(0%, 60%);
+	}
+	to {
+		transform: rotate(75deg) translate(-20%, 60%)
+	}
+}
+
+.get-close-to-leader {
+	animation: moveFoward105deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveFoward105deg {
+	from {
+		transform: rotate(105deg) translate(20%, 40%);
+	}
+	to {
+		transform: rotate(105deg) translate(0, -10%)
+	}
+}
+
+.come-up {
+	animation: moveUp55deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes moveUp55deg {
+	from {
+		transform: rotate(55deg) translate(-15%, 0%);
+	}
+	to {
+		transform: rotate(55deg) translate(-40%, -40%)
+	}
+}
+
+.just-cruise {
+	animation: rotate75deg 2s alternate ease-in-out infinite;
+}
+
+@keyframes rotate75deg {
+	from {
+		transform: rotate(75deg);
+	}
+	to {
+		transform: rotate(105deg);
+	}
+
+}
+
+.lead {
+	animation: moveHead10deg 4s alternate ease-in-out infinite;
+}
+
+@keyframes moveHead10deg {
+	0% {
+		transform: rotate(0deg);
+	}
+	33% {
+		transform: rotate(-10deg);
+	}
+	66% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+.follow-down {
+	animation: moveHeadDown20deg 4s alternate ease-in-out infinite;
+}
+
+@keyframes moveHeadDown20deg {
+	to {
+		transform: rotate(20deg);
+	}
+}
+
+/*
+  ========================================
+  Page4 animations
+  ========================================
+*/
+.stunt {
+	transform: translate(-100%, -100%);
+}
+
+.stunt-backwards {
+	transform: translate(100%, -200%);
+}
+
+.move-fish-row{
+	animation: rowAcrossScreen 4s linear infinite;
+}
+
+@keyframes rowAcrossScreen {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+.move-fish-row-backwards {
+	animation: acrossScreenBackwards 4s linear infinite;
+}
+
+@keyframes acrossScreenBackwards {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translate(-100%);
+	}
+}
+
+.move-stunt-pack-backwards {
+	animation: moveDoublePackBackwards 4s linear infinite;
+}
+
+@keyframes moveDoublePackBackwards {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translate(-100%);
+	}
+}
+
+.cruising {
+	animation: rowUp 2s alternate ease-in-out infinite;
+}
+
+@keyframes rowUp {
+	to {
+		transform: translateX(-40%);
+	}
+}
+
+.cruising-down {
+	animation: rowDown 2s alternate ease-in-out infinite;
+}
+
+@keyframes rowDown {
+	to {
+		transform: translateX(40%);
+	}
+}
+
+/*
+  ========================================
+  Page7 animations
+  ========================================
+*/
+
+.swoosh-40 {
+	animation: rotate40degRange 1s alternate ease-in-out infinite;
+}
+
+@keyframes rotate40degRange {
+	from {
+		transform: scale(2);
+	}
+	to {
+		transform: scale(2) rotate(40deg);
+	}
+}
+
+.swoosh-40-backwards {
+	animation: rotate40degRangeBackwards 1s alternate ease-in-out infinite;
+}
+
+@keyframes rotate40degRangeBackwards {
+	from {
+		transform: scale(2);
+	}
+	to {
+		transform: scale(2) rotate(-40deg);
+	}
+}
+
+.swoosh-20 {
+	animation: rotate20degRange 1s alternate ease-in-out infinite;
+}
+
+@keyframes rotate20degRange {
+	from {
+		transform: scale(2);
+	}
+	to {
+		transform: scale(2) rotate(20deg);
+	}
+}
+
+.swoosh-20-backwards {
+	animation: rotate20degRangeBackwards 1s alternate ease-in-out infinite;
+}
+
+@keyframes rotate20degRangeBackwards {
+	from {
+		transform: scale(2);
+	}
+	to {
+		transform: scale(2) rotate(-20deg);
+	}
+}
+
+.go-crazy {
+	animation: fullRotation 0.5s linear infinite;
+}
+
+@keyframes fullRotation {
+	from {
+		transform: scale(2) rotate(0deg);
+	}
+	to {
+		transform: scale(2) rotate(360deg);
+	}
+}
+
+.spin {
+	animation: fullRotation 3s linear infinite;
+}
+
+.fast {
+	animation: fullRotation 2s linear infinite;
+}
+
+.faster {
+	animation: fullRotation 1s linear infinite;
+}
+
+/*
+  ========================================
+  Bird animations
+  ========================================
+*/
+
+.bird-left-and-right {
+	animation: birdLeftAndRight 5s alternate ease-in-out infinite;
+}
+
+@keyframes birdLeftAndRight {
+	to {
+		transform: translateX(-40%) translateY(0%);
+	}
+
+}
+
+.wait-and-attack {
+	animation: birdUpAndDown 1.5s alternate ease-in-out infinite;
+}
+
+@keyframes birdUpAndDown {
+	to {
+		transform: translateY(-50%);
+	}
+}
+
+/*
+  ========================================
+  Page8 animations
+  ========================================
+*/
+
+.scared-down {
+	animation: down20pc 1s steps(2) alternate infinite;
+}
+
+@keyframes down20pc {
+	to {
+		transform: translate(20%);
+	}
+}
+
+.scared-up {
+	animation: up20pc 1s steps(2) alternate infinite;
+}
+
+@keyframes up20pc {
+	to {
+		transform: translate(-20%);
+	}
+}
+
+.scared-foward {
+	animation: foward40pc 1s steps(2) alternate infinite;
+}
+
+@keyframes foward40pc {
+	to {
+		transform: translate(0%, -40%);
+	}
+}
+
+.scared-backward {
+	animation: backward40pc 1s steps(2) alternate infinite;
+}
+
+@keyframes backward40pc {
+	to {
+		transform: translate(0%, 40%);
+	}
+}
+
+/*
+  ========================================
+  Page9 animations
+  ========================================
+*/
+
+.escape {
+	animation: rotate30degRange 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate30degRange {
+	0% {
+		transform: rotate(-15deg);
+	}
+	10% {
+		transform: rotate(15deg);
+	}
+	20% {
+		transform: rotate(-15deg);
+	}
+	30% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	60% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+
+/*
+  ========================================
+  Round pages
+  ========================================
+*/
+
+
 .description {
-	font-family: 'Architects Daughter', cursive;
-	font-size: 3vh;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 5vh;
 	height: 40%;
 }
 
-.portifolio-link a:link, a:visited {
+a {
 	color: #000;
-	-webkit-appearance: none;
 }
 
 .spiral-container {
@@ -308,7 +998,7 @@ svg path {
 	height: 100vh;
 }
 
-.spiral-container div {
+.spiral-container > div {
     position: absolute;
     top: 50%; left: 50%;
     width: 9.0909090909%; height: 20%;
@@ -316,106 +1006,346 @@ svg path {
 
 .round-deg15 {
 	transform: rotate(15deg) translate(-430%, -105%);
+	animation: round-deg15 4s linear infinite;
+}
+
+@keyframes round-deg15 {
+	0% { transform: rotate(15deg) translate(-430%, -105%); }
+	25% { transform: rotate(105deg) translate(-330%, 105%); }
+	50% { transform: rotate(195deg) translate(-340%, 80%); }
+	75% { transform: rotate(285deg) translate(-275%, -95%); }
+	100% { transform: rotate(375deg) translate(-430%, -105%); }
 }
 
 .round-deg30 {
 	transform: rotate(30deg) translate(-305%, 50%);
+	animation: round-deg30 4s linear infinite;
 }
 
-.first-circle {
-	top: 50%;
+@keyframes round-deg30 {
+	0% { transform: rotate(30deg) translate(-305%, 50%); }
+	25% { transform: rotate(120deg) translate(-230%, 20%); }
+	50% { transform: rotate(210deg) translate(-135%, 80%); }
+	75% { transform: rotate(300deg) translate(-165%, -35%); }
+	100% { transform: rotate(390deg) translate(-305%, 50%); }
 }
 
 .round-deg35 {
 	transform: rotate(35deg) translate(-500%, 125%);
+	animation: round-deg35 4s linear infinite;
+}
+
+@keyframes round-deg35 {
+	0% { transform: rotate(35deg) translate(-500%, 125%); }
+	25% { transform: rotate(125deg) translate(-360%, 95%); }
+	50% { transform: rotate(215deg) translate(-290%, 80%); }
+	75% { transform: rotate(305deg) translate(-350%, -120%); }
+	100% { transform: rotate(395deg) translate(-500%, 125%); }
 }
 
 .round-deg45 {
 	transform: rotate(45deg) translate(-350%, 80%);
+	animation: round-deg45 4s linear infinite;
+}
+
+@keyframes round-deg45 {
+	0% { transform: rotate(45deg) translate(-350%, 80%); }
+	25% { transform: rotate(135deg) translate(-220%, -35%); }
+	50% { transform: rotate(225deg) translate(-150%, -45%); }
+	75% { transform: rotate(315deg) translate(-200%, -80%); }
+	100% { transform: rotate(405deg) translate(-350%, 80%); }
 }
 
 .round-deg55 {
 	transform: rotate(55deg) translate(-505%, 140%);
+	animation: round-deg55 4s linear infinite;
+}
+
+@keyframes round-deg55 {
+	0% { transform: rotate(55deg) translate(-505%, 140%); }
+	25% { transform: rotate(145deg) translate(-440%, 75%); }
+	50% { transform: rotate(235deg) translate(-350%, 75%); }
+	75% { transform: rotate(325deg) translate(-450%, -70%); }
+	100% { transform: rotate(415deg) translate(-505%, 140%); }
 }
 
 .round-deg75 {
 	transform: rotate(75deg) translate(-330%, 90%);
+	animation: round-deg75 4s linear infinite;
+}
+
+@keyframes round-deg75 {
+	0% { transform: rotate(75deg) translate(-330%, 90%); }
+	25% { transform: rotate(165deg) translate(-320%, 75%); }
+	50% { transform: rotate(255deg) translate(-200%, 25%); }
+	75% { transform: rotate(345deg) translate(-475%, -105%); }
+	100% { transform: rotate(435deg) translate(-330%, 90%); }
 }
 
 .round-deg115 {
 	transform: rotate(115deg) translate(-290%, 70%);
+	animation: round-deg115 4s linear infinite;
+}
+
+@keyframes round-deg115 {
+	0% { transform: rotate(115deg) translate(-290%, 70%); }
+	25% { transform: rotate(205deg) translate(-330%, 100%); }
+	50% { transform: rotate(295deg) translate(-255%, -50%); }
+	75% { transform: rotate(385deg) translate(-405%, -50%); }
+	100% { transform: rotate(475deg) translate(-290%, 70%); }
 }
 
 .round-deg125 {
 	transform: rotate(125deg) translate(-410%, 15%);
+	animation: round-deg125 4s linear infinite;
+}
+
+@keyframes round-deg125 {
+	0% { transform: rotate(125deg) translate(-410%, 15%); }
+	25% { transform: rotate(215deg) translate(-370%, 100%); }
+	50% { transform: rotate(305deg) translate(-350%, -75%); }
+	75% { transform: rotate(395deg) translate(-490%, -50%); }
+	100% { transform: rotate(485deg) translate(-410%, 15%); }
 }
 
 .round-deg130 {
 	transform: rotate(130deg) translate(-235%, 15%);
+	animation: round-deg130 4s linear infinite;
+}
+
+@keyframes round-deg130 {
+	0% { transform: rotate(130deg) translate(-235%, 15%); }
+	25% { transform: rotate(220deg) translate(-150%, 50%); }
+	50% { transform: rotate(310deg) translate(-170%, -90%); }
+	75% { transform: rotate(400deg) translate(-290%, 50%); }
+	100% { transform: rotate(490deg) translate(-235%, 15%); }
 }
 
 .round-deg150 {
 	transform: rotate(150deg) translate(-335%, 70%);
+	animation: round-deg150 4s linear infinite;
+}
+
+@keyframes round-deg150 {
+	0% { transform: rotate(150deg) translate(-335%, 70%); }
+	25% { transform: rotate(240deg) translate(-220%, 110%); }
+	50% { transform: rotate(330deg) translate(-365%, -70%); }
+	75% { transform: rotate(420deg) translate(-385%, 130%); }
+	100% { transform: rotate(510deg) translate(-335%, 70%); }
 }
 
 .round-deg155 {
 	transform: rotate(155deg) translate(-440%, 15%);
+	animation: round-deg155 4s linear infinite;
+}
+
+@keyframes round-deg155 {
+	0% { transform: rotate(155deg) translate(-440%, 15%); }
+	25% { transform: rotate(245deg) translate(-300%, 65%); }
+	50% { transform: rotate(335deg) translate(-480%, -65%); }
+	75% { transform: rotate(425deg) translate(-380%, 65%); }
+	100% { transform: rotate(515deg) translate(-440%, 15%); }
 }
 
 .round-deg185 {
 	transform: rotate(185deg) translate(-230%, 45%);
+	animation: round-deg185 4s linear infinite;
+}
+
+@keyframes round-deg185 {
+	0% { transform: rotate(185deg) translate(-230%, 45%); }
+	25% { transform: rotate(275deg) translate(-130%, 5%); }
+	50% { transform: rotate(365deg) translate(-285%, -45%); }
+	75% { transform: rotate(455deg) translate(-190%, -15%); }
+	100% { transform: rotate(545deg) translate(-230%, 45%); }
 }
 
 .round-deg190 {
 	transform: rotate(190deg) translate(-305%, 70%);
+	animation: round-deg190 4s linear infinite;
+}
+
+@keyframes round-deg190 {
+	0% { transform: rotate(190deg) translate(-305%, 70%); }
+	25% { transform: rotate(280deg) translate(-180%, -40%); }
+	50% { transform: rotate(370deg) translate(-410%, -70%); }
+	75% { transform: rotate(460deg) translate(-290, 110%); }
+	100% { transform: rotate(550deg) translate(-305%, 70%); }
 }
 
 .round-deg210 {
 	transform: rotate(210deg) translate(-380%, 100%);
+	animation: round-deg210 4s linear infinite;
+}
+
+@keyframes round-deg210 {
+	0% { transform: rotate(210deg) translate(-380%, 100%); }
+	25% { transform: rotate(300deg) translate(-370%, -100%); }
+	50% { transform: rotate(390deg) translate(-560%, 150%); }
+	75% { transform: rotate(480deg) translate(-355%, -50%); }
+	100% { transform: rotate(570deg) translate(-380%, 100%); }
 }
 
 .round-deg235 {
 	transform: rotate(235deg) translate(-340%, 90%);
+	animation: round-deg235 4s linear infinite;
+}
+
+@keyframes round-deg235 {
+	0% { transform: rotate(235deg) translate(-340%, 90%); }
+	25% { transform: rotate(325deg) translate(-470%, -90%); }
+	50% { transform: rotate(405deg) translate(-540%, 90%); }
+	75% { transform: rotate(505deg) translate(-515%, 75%); }
+	100% { transform: rotate(595deg) translate(-340%, 90%); }
 }
 
 .round-deg240 {
 	transform: rotate(240deg) translate(-225%, 100%);
+	animation: round-deg240 4s linear infinite;
+}
+
+@keyframes round-deg240 {
+	0% { transform: rotate(240deg) translate(-225%, 100%); }
+	25% { transform: rotate(330deg) translate(-365%, -85%); }
+	50% { transform: rotate(410deg) translate(-430%, 115%); }
+	75% { transform: rotate(500deg) translate(-330%, 115%); }
+	100% { transform: rotate(600deg) translate(-225%, 100%); }
 }
 
 .round-deg255 {
 	transform: rotate(255deg) translate(-245%, 30%);
+	animation: round-deg255 4s linear infinite;
+}
+
+@keyframes round-deg255 {
+	0% { transform: rotate(255deg) translate(-245%, 30%); }
+	25% { transform: rotate(345deg) translate(-400%, -115%); }
+	50% { transform: rotate(435deg) translate(-370%, 100%); }
+	75% { transform: rotate(525deg) translate(-365%, 25%); }
+	100% { transform: rotate(615deg) translate(-245%, 30%); }
 }
 
 .round-deg265 {
 	transform: rotate(265deg) translate(-130%, 30%);
+	animation: round-deg265 4s linear infinite;
+}
+
+@keyframes round-deg265 {
+	0% { transform: rotate(265deg) translate(-130%, 30%); }
+	25% { transform: rotate(355deg) translate(-305%, -55%); }
+	50% { transform: rotate(445deg) translate(-250%, 20%); }
+	75% { transform: rotate(535deg) translate(-215%, 65%); }
+	100% { transform: rotate(625deg) translate(-130%, 30%); }
 }
 
 .round-deg285 {
 	transform: rotate(285deg) translate(-270%, -95%);
+	animation: round-deg285 4s linear infinite;
+}
+
+@keyframes round-deg285 {
+	0% { transform: rotate(285deg) translate(-270%, -95%); }
+	25% { transform: rotate(375deg) translate(-450%, -55%); }
+	50% { transform: rotate(465deg) translate(-360%, 65%); }
+	75% { transform: rotate(555deg) translate(-315%, 65%); }
+	100% { transform: rotate(645deg) translate(-270%, -95%); }
 }
 
 .round-deg290 {
 	transform: rotate(290deg) translate(-200%, -50%);
+	animation: round-deg290 4s linear infinite;
+}
+
+@keyframes round-deg290 {
+	0% { transform: rotate(290deg) translate(-200%, -50%); }
+	25% { transform: rotate(380deg) translate(-230%, -10%); }
+	50% { transform: rotate(470deg) translate(-200%, 50%); }
+	75% { transform: rotate(560deg) translate(-200%, 80%); }
+	100% { transform: rotate(650deg) translate(-200%, -50%); }
 }
 
 .round-deg320 {
 	transform: rotate(320deg) translate(-450%, -80%);
+	animation: round-deg320 4s linear infinite;
+}
+
+@keyframes round-deg320 {
+	0% { transform: rotate(320deg) translate(-450%, -80%); }
+	25% { transform: rotate(410deg) translate(-520%, 100%); }
+	50% { transform: rotate(500deg) translate(-420%, 15%); }
+	75% { transform: rotate(590deg) translate(-320%, 105%); }
+	100% { transform: rotate(680deg) translate(-450%, -80%); }
 }
 
 .round-deg325 {
 	transform: rotate(325deg) translate(-350%, -90%);
+	animation: round-deg325 4s linear infinite;
+}
+
+@keyframes round-deg325 {
+	0% { transform: rotate(325deg) translate(-350%, -90%); }
+	25% { transform: rotate(415deg) translate(-450%, 110%); }
+	50% { transform: rotate(505deg) translate(-350%, 110%); }
+	75% { transform: rotate(595deg) translate(-350%, 110%); }
+	100% { transform: rotate(685deg) translate(-350%, -90%); }
 }
 
 .round-deg330 {
 	transform: rotate(330deg) translate(-260%, -80%);
+	animation: round-deg330 4s linear infinite;
+}
+
+@keyframes round-deg330 {
+	0% { transform: rotate(330deg) translate(-260%, -80%); }
+	25% { transform: rotate(420deg) translate(-260%, 85%); }
+	50% { transform: rotate(510deg) translate(-240%, 65%); }
+	75% { transform: rotate(600deg) translate(-170%, 100%); }
+	100% { transform: rotate(690deg) translate(-260%, -80%); }
 }
 
 .round-deg340 {
 	transform: rotate(340deg) translate(-545%, -95%);
+	animation: round-deg340 4s linear infinite;
+}
+
+@keyframes round-deg340 {
+	0% { transform: rotate(340deg) translate(-545%, -95%); }
+	25% { transform: rotate(430deg) translate(-500%, 95%); }
+	50% { transform: rotate(520deg) translate(-525%, 15%); }
+	75% { transform: rotate(610deg) translate(-320%, 15%); }
+	100% { transform: rotate(700deg) translate(-545%, -95%); }
 }
 
 .round-deg345 {
 	transform: rotate(345deg) translate(-400%, -115%);
+	animation: round-deg345 4s linear infinite;
+}
+
+@keyframes round-deg345 {
+	0% { transform: rotate(345deg) translate(-400%, -115%); }
+	25% { transform: rotate(435deg) translate(-330%, 115%); }
+	50% { transform: rotate(525deg) translate(-330%, 10%); }
+	75% { transform: rotate(615deg) translate(-245%, 10%); }
+	100% { transform: rotate(705deg) translate(-400%, -115%); }
+}
+
+/*
+  ========================================
+  Page5 animations
+  ========================================
+*/
+
+.in-and-out {
+	animation: moveInAndOut 2s cubic-bezier(0.4, 0, 0.2, 1) alternate infinite;
+}
+
+@keyframes moveInAndOut {
+	from {
+		transform: translate(0%, 30%);
+	}
+	to {
+		transform: translate(0%, -200%);
+	}
 }
 
 .out-deg15 {
@@ -542,6 +1472,37 @@ svg path {
 	transform: rotate(355deg) translate(40%, -210%);
 }
 
+
+/*
+  ========================================
+  Page6 animations
+  ========================================
+*/
+
+.out-and-in {
+	animation: moveOutAndIn 2s cubic-bezier(0.4, 0, 0.2, 1) alternate infinite;
+}
+
+@keyframes moveOutAndIn {
+	from {
+		transform: translate(0%, 200%);
+	}
+	to {
+		transform: translate(0%, -50%);
+
+	}
+}
+
+.go-surface {
+	animation: scale2times 2s alternate ease-in-out infinite;
+}
+
+@keyframes scale2times {
+	to {
+		transform: scale(1.3) translate(0%, -20%);
+	}
+}
+
 .in-deg20 {
 	transform: rotate(20deg) translate(-30%, 150%);
 }
@@ -590,12 +1551,12 @@ svg path {
 	transform: rotate(180deg) translate(80%, 220%);
 }
 
-.in-deg190 {
-	transform: rotate(190deg) translate(-80%, 155%);
-}
-
 .in-deg195 {
 	transform: rotate(195deg) translate(15%, 270%);
+}
+
+.in-deg220 {
+	transform: rotate(220deg) translate(45%, 170%);
 }
 
 .in-deg225 {
@@ -634,13 +1595,19 @@ svg path {
 	transform: rotate(345deg) translate(25%, 150%);
 }
 
+/*
+  ========================================
+  Media queries
+  ========================================
+*/
+
 @media screen and (orientation: portrait) {
   .container, .spiral-container {
 		transform: rotate(-90deg);
     transform-origin: left top;
     width: 100vh;
 		height: 100vw;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     position: absolute;
     top: 100%;
     left: 0;
@@ -651,6 +1618,40 @@ svg path {
 	}
 
 	.author {
-		font-size: 1.8vw;
+		font-size: 2.8vw;
+	}
+
+	.type {
+		font-size: 8.5vw;
+	}
+
+	.description {
+		font-size: 5vw;
+	}
+
+	@keyframes acrossScreen {
+		from {
+			transform: rotate(-90deg) translateX(0);
+		}
+		to {
+			transform: rotate(-90deg) translateX(100%);
+		}
+	}
+
+	@keyframes moveDoublePack {
+		from {
+			transform: rotate(-90deg) translate(-100%, 0%);
+		}
+		to {
+			transform: rotate(-90deg) translate(0%, 0%);
+		}
+	}
+
+	.stunt {
+		transform: rotate(-90deg) translate(-100%, 0%);
+	}
+
+	.stunt-backwards {
+		transform: rotate(-90deg) translate(100%, 0%);
 	}
 }
