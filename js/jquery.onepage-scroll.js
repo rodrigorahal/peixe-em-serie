@@ -236,7 +236,7 @@
       if (valForTest) {
         $("body").addClass("disabled-onepage-scroll");
         $(document).unbind('mousewheel DOMMouseScroll MozMousePixelScroll');
-        el.swipeEvents().unbind("swipeDown swipeUp");
+        el.swipeEvents().unbind("swipeDown swipeUp swipeRight swipeLeft");
       } else {
         if($("body").hasClass("disabled-onepage-scroll")) {
           $("body").removeClass("disabled-onepage-scroll");
@@ -248,6 +248,12 @@
           if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
           el.moveUp();
         }).bind("swipeUp", function(event){
+          if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+          el.moveDown();
+        }).bind("swipeRight", function(event){
+          if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+          el.moveUp();
+        }).bind("swipeLeft", function(event){
           if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
           el.moveDown();
         });
@@ -315,6 +321,12 @@
     }).bind("swipeUp", function(event){
       if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
       el.moveDown();
+    }).bind("swipeLeft", function(event){
+      if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      el.moveDown();
+    }).bind("swipeRight", function(event){
+      if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
+      el.moveUp();
     });
 
     // Create Pagination and Display Them
