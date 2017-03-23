@@ -217,7 +217,7 @@ svg path {
 */
 
 .bird {
-  background-image: url("../img/passaro-min.png");
+  background-image: url("../img/passaro-low.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
